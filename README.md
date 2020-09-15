@@ -84,9 +84,12 @@ reserving analysis on a periodical base.
     audience outside of reserving
       - We present results to relevant stakeholders (Finance, UW, etc)
       - We also supply any actuarial data required by our colleagues
-9.  In the last step, we save our final reserves numbers and any
-    relevant data, documentation into a historical database for future
-    reference
+9.  We save our final reserves numbers and any relevant data,
+    documentation into a historical database for future reference
+10. Based on the historical database, we create tools to monitor the
+    portfolio
+      - Include metrics such as Actual vs Expected, reported frequency,
+        reported severity, etc
 
 <div style="width:1500px; height:750px">
 
