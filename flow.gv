@@ -80,6 +80,19 @@ digraph{
 
       I[label = 'Save Result to Database']
 
+      subgraph cluster_monitor {
+        rank = same
+        graph[shape = rectangle]
+        style = rounded
+        bgcolor = Gold
+
+        label = 'Monitor Portfolio'
+        node[shape = rectangle, style = filled, fillcolor = LemonChiffon, margin = 0.25]
+        j1[label = 'Actual vs Expected']
+        j2[label = 'Aanlytics Dashboard']
+
+      }
+
       {rank = same; B -> e3 -> h1[style = invis]}
       {rank = same; d2 -> g1 -> I[style = invis]}
 
@@ -94,6 +107,7 @@ digraph{
 
       g1 -> e5 [ltail = cluster_communicate, lhead = cluster_judgment]
       h1 -> I [ltail = cluster_output, lhead = I]
+      I -> j1[tail = I, lhead = cluster_monitor]
 
       edge[color = black, arrowhead = vee, arrowsize = 1.25, weight = 1]
       d3 -> e3 [ltail = cluster_methods, lhead = cluster_judgment]
